@@ -1,0 +1,162 @@
+/* green: rgb(118,150,86) cream: rgb(238, 238,210) */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38,37,34);
+    align-items: top;
+    margin-right: 50px;
+    margin-top: 0px;
+    width: 140px;
+    
+}
+.lefttext {
+    color: white;
+    font-family:'Segoe UI', Arial;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.lefttext:hover {
+    background-color: rgb(33,32,29);
+    transition: 0.2s
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.logopic {
+    display: flex;
+    width: 120px;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+}
+.player-panel {
+    display: flex;
+    width: 640px;
+}
+.profilepic {
+    width: 40px;
+    border-radius: 4px;
+}
+.player-name {
+    color: white;
+    font-family:'Segoe UI', Arial;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38,37,34);
+    align-items: top;
+    margin-left: 30px;
+    width: 500px;
+    border-radius: 8px;
+ 
+}
+.right-text {
+    color: white;
+    font-family:'Segoe UI', Arial;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 10px;
+}
+.sidebarbottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.paneltext {
+    color: white;
+    font-family:'Segoe UI', Arial;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+.subpaneltext {
+    color: lightgray;
+    font-family:'Segoe UI', Arial;
+    font-size: 14px;
+}
+.right-panels {
+    display: flex;
+    background-color: rgb(30,30,27);
+    width: 450px;
+    margin-bottom: 5px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.right-panels:hover {
+    background-color: rgb(23,22,20);
+    transition: 0.2s;
+}
+.rightpic-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rightpicture {
+    width: 100px;
+}
+.panelpics {
+    width: 50px;
+}
+.panelpic-containers {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.paneltext-containers {
+    flex: 4;
+}
+
+img {
+    width: 100%;
+}
+
+.big-container {
+    display: flex;
+    align-items: top; 
+}
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 640px;
+    width: 640px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.square {
+    background-color: rgb(238, 238, 210);
+    width: 80px;
+    height: 80px;
+}
+
+.files:nth-of-type(odd) .square:nth-of-type(even){
+    background-color: rgb(118,150,86);
+}
+.files:nth-of-type(even) .square:nth-of-type(odd){
+    background-color: rgb(118,150,86);
+}
